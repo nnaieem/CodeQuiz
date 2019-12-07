@@ -18,30 +18,29 @@
             <span class="nav-link" id="time">0</span>
         </li>
     </ul>
-    <div class="card text-center" style="width: 40rem;">
+    <div class="card text-center" style="width: 40rem;" id="startScreen">
         <img src="https://clutchpoints.com/wp-content/uploads/2018/07/LeBron-James-9.jpg" class="card-img-top" alt="...">
-        <div class="card-body" id="startScreen">
+        <div class="card-body">
             <h1 class="card-title">Basketball Quiz</h1>
             <p class="card-text">Try to answer the following basketball related questions within the time limit. Keep in mind that incorrect answers will penalize your score/time by ten seconds!</p>
             <button class="btn btn-primary" id="start">Start Quiz</button>
-        </div>
-
-        <div id="questions" class="hide">
-            <h2 id="question-title"></h2>
-            <div id="choices" class="choices"></div>
-        </div>
-
-        <div id="end-screen" class="hide">
-            <h2>Game Over!</h2>
-            <p>you final score is <span id="final-score"></span>.</p>
-            <p>
-                Enter initials: <input type="text" id="initials" max="3" />
-                <button id="submit">Submit</button>
-            </p>
-        </div>
-
-        <div id="feedback" class="feedback hide"></div>
+        </div>   
     </div>
+    <div id="questions" class="hide">
+        <h2 id="question-title"></h2>
+        <div id="choices" class="choices"></div>
+    </div>
+    
+    <div id="end-screen" class="hide">
+        <h2>Game Over!</h2>
+        <p>you final score is <span id="final-score"></span>.</p>
+        <p>
+            Enter initials: <input type="text" id="initials" max="3" />
+            <button id="submit">Submit</button>
+        </p>
+    </div>
+    
+    <div id="feedback" class="feedback hide"></div>
 
     <script src="questions.js"></script>
     <script src="script.js"></script>
