@@ -14,3 +14,22 @@
 .hide {
   display: none;
 }
+
+#end-screen {
+  margin: 0 auto;
+  float: none;
+  margin-bottom: 10px;
+}
+
+#scoreboard {
+  margin: 0 auto;
+  float: none;
+  margin-bottom: 10px;
+}
+
+#questions {
+  margin: 0 auto;
+  float: none;
+  margin-bottom: 10px;
+  
+}

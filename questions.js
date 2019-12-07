@@ -15,7 +15,7 @@ var questions = [
     answer: "Michael Jordan"
   },
   {
-    title: "Who is the all time best 3-point shooter in the NBA?",
+    title: "Who is currently the best 3-point shooter in the NBA?",
     choices: ["Michael Jordan", "Lebron James", "Kobe Bryant", "Steph Curry"],
     answer: "Steph Curry"
   },

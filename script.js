@@ -16,6 +16,7 @@ var feedbackEl = document.getElementById("feedback");
 
 
 
+
 function startQuiz() {
     // when the start button is clicked
     // this will hide the start screen because it is currently visible
@@ -114,19 +115,20 @@ function clockTick() {
 function saveHighscore() {
     // get entered values and trim white space
     var initials = initialsEl.value.trim();
+    console.log(initials);
 
     //check to see if a value was actually entered
     if (initials !== "") {
         var highscores = JSON.parse(window.localStorage.getItem("highscores")) || [];
 
         // pull left over time and store initials as the new score
-        var userScore = {
+        var newScore = {
             score: time,
-            initials: initialsEl
+            initials: initials
         };
 
         // save the new score to local storage
-        highscores.push(userScore);
+        highscores.push(newScore);
         window.localStorage.setItem("highscores", JSON.stringify(highscores));
 
         // take the user to the next page
